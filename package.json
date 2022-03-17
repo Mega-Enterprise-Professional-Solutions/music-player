@@ -2,7 +2,7 @@
     "name": "random-player",
     "version": "0.0.1",
     "description": "Music player for players",
-    "main": "index.js",
+    "main": "./src/main.js",
     "license": "MIT",
     "devDependencies": {
         "electron": "17.1.2"
