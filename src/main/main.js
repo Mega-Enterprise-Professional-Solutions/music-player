@@ -12,7 +12,7 @@ const createWindow = () => {
     })
 
     // and load the index.html of the app.
-    mainWindow.loadFile('src/example.html');
+    mainWindow.loadFile( path.join(__dirname, 'example.html'));
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();

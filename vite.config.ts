@@ -12,7 +12,8 @@ const config = {
     envDir: process.cwd(),
     resolve: {
         alias: {
-            '/@/': join(PACKAGE_ROOT, 'src') + '/',
+            '@/': join(PACKAGE_ROOT, 'src') + '/',
+            'renderer': join(PACKAGE_ROOT, 'src', 'renderer'),
         },
     },
     build: {
@@ -29,7 +30,7 @@ const config = {
             input: {
                 main: join(PACKAGE_ROOT, 'src/main/main.js'),
                 preload: join(PACKAGE_ROOT, 'src/preload/preload.js'),
-                renderer: join(PACKAGE_ROOT, 'src/renderer/index.js'),
+                renderer: join(PACKAGE_ROOT, 'src/renderer/index.html'),
             },
             external: [
                 'vue',
