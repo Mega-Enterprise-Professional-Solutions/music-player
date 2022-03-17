@@ -6,7 +6,8 @@ const createWindow = () => {
         width: 800,
         height: 600,
         webPreferences: {
-            webSecurity: false // временный костыль
+            webSecurity: false, // TODO: временный костыль
+            preload: path.join(__dirname, 'preload.cjs'),
         }
     })
 
